@@ -1,0 +1,30 @@
+.Home {
+    width: 1440px;
+    height: 1802px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E2E8EE;
+}
+.RightBar {
+    display: grid;
+    grid-template-rows: 0fr 9fr 1fr;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E2E8EE;
+}
+.LeftBar {
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E2E8EE;
+}
+.menu:hover {
+    background-color: #E86B02;
+    cursor: pointer;
+}
+.Box {
+    display: grid;
+    grid-template-rows: 0fr 1fr 0fr 1fr 0fr 1fr;
+}
