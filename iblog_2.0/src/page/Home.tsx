@@ -4,6 +4,7 @@ import Image from '../assets/Image.png'
 import w_pen from '../assets/w_pen.png'
 import { Outlet } from "react-router-dom"
 import Post from "./Post"
+import Login from "./Login"
 import '../App.css'
 import { useState } from "react"
 

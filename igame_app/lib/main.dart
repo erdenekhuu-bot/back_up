@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyDemo());
+  runApp(LMaterialWidget());
 }
 
 class MyDemo extends StatelessWidget {
@@ -183,5 +183,38 @@ class NextPage extends StatelessWidget {
       ),
       // margin: const EdgeInsets.fromLTRB(50, 30, 50, 0)
     )));
+  }
+}
+
+class LMaterialWidget extends StatelessWidget {
+  const LMaterialWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+          backgroundColor:
+              Theme.of(context).colorScheme.secondary.withOpacity(0.5),
+          appBar: AppBar(
+            backgroundColor: Theme.of(context).primaryColor,
+            title: const Text('MaterialApp'),
+          ),
+          body: const Center(
+            child: Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Text(
+                'Hello World',
+                style:
+                    TextStyle(fontSize: 14, height: 1.5, color: Colors.amber),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
