@@ -18,8 +18,17 @@ export function Login(){
                     <button type='submit' style={{height: 45, width: 50, borderTopRightRadius: 30, borderBottomRightRadius: 30, border: 'none'}}>🔍</button>
                 </form>
                 <div style={{display: 'flex', justifyContent: 'space-around'}}>
-                    <button className='openPopup' style={{width: 149, height: 41, borderRadius: 10, border: 'none',margin: 5, backgroundColor: 'white', color: 'white', alignItems: 'center'}}><Link to='/login/signUp' style={{textDecoration:'none',color: '#E86B02'}}>Бүртгүүлэх</Link></button>
-                    <button style={{width: 122, height: 41, borderRadius: 10, borderTop: 'none', borderRight:'none',borderLeft:'none', borderWidth: 1, borderStyle: 'solid', borderColor: '#E86B02', margin: 5, backgroundColor: '#E86B02'}}><Link to='/login' style={{textDecoration: 'none',color: 'white'}}>Нэвтрэх</Link></button>
+                <Link to='/login/signUp' style={{textDecoration:'none'}}>
+                    <button className='openPopup' style={{width: 149, height: 41, 
+                                                          borderRadius: 10, border: 'none',margin: 5, backgroundColor: 'white', 
+                                                          color: '#E86B02', alignItems: 'center', cursor: 'pointer'}}>
+                                                            Бүртгүүлэх</button>
+                </Link>
+                <Link to='/login' style={{textDecoration: 'none'}}>
+                    <button style={{width: 122, height: 41, borderRadius: 10, borderTop: 'none', 
+                                   borderRight:'none',borderLeft:'none', borderWidth: 1, borderStyle: 'solid', color: 'white',
+                                   borderColor: '#E86B02', margin: 5, backgroundColor: '#E86B02', cursor: 'pointer'}}>Нэвтрэх</button>
+                </Link>
                 </div>
         </div>
         <Outlet/>

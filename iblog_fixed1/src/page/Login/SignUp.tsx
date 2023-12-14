@@ -3,7 +3,9 @@ import gmail from '../../assets/google.png'
 import {Link} from 'react-router-dom'
 
 
+
 export function Access(){
+
     return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div style={{width: 478}}>
@@ -12,13 +14,14 @@ export function Access(){
                     <input type="password" placeholder="Нууц үг" style={{width: 470, height: 50, borderRadius: 10, border: 'none', backgroundColor: '#F5F7F9'}}/> <p></p>
                     
                     <Link to={'/login/forgotPassword'}>
-                    <span style={{position: 'relative', display: 'flex', justifyContent: 'flex-end', textDecoration: 'underline', color: '#E86B02'}}>Нууц үг мартсан уу?</span> 
+                          <span style={{position: 'relative', display: 'flex', justifyContent: 'flex-end', textDecoration: 'underline', color: '#E86B02', cursor: 'pointer'}}>Нууц үг мартсан уу?</span> 
                     </Link>
                     <p></p>
-                    
-                    <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#E86B02', borderRadius: 10, border: 'none', color: 'white'}}><Link to='/home'>Нэвтрэх</Link>
-
-                        </button> <p></p>
+                    <Link to='/home' style={{textDecoration: 'none'}}>
+                    <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#E86B02', borderRadius: 10, border: 'none', color: 'white', cursor: 'pointer'}}>Нэвтрэх
+                        </button>
+                    </Link>
+                    <p></p>
                     <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', alignItems: 'center', borderStyle: 'solid',borderColor:'#F9D9BD', borderRadius: 10}}> 
                          <img src={gmail} alt="" />
                          <span style={{margin: 5}}>Gmail-ээр нэвтрэх</span>
@@ -38,18 +41,22 @@ export function SignUp(){
     return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div style={{width: 478}}>
-                    <b style={{fontSize: 20, color: '#E86B02'}}>Бүртгүүлэх</b> <p></p>
+                    <b style={{fontSize: 20, color: '#E86B02', fontFamily: 'sans-serif'}}>Бүртгүүлэх</b> <p></p>
                     <input type="text" placeholder="И-мэйл эсвэл утасны дугаар" style={{width: 470, height: 50, borderRadius: 10, border: 'none', backgroundColor: '#F5F7F9'}}/> <p></p>
-                    <Link to={'/login/createPassword'}>
-                        <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#E86B02', borderRadius: 10, border: 'none', color: 'white'}}>Бүртгүүлэх
+                    <Link to={'/login/createPassword'} style={{textDecoration: 'none'}}>
+                        <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', 
+                                      alignItems: 'center', backgroundColor: '#E86B02', borderRadius: 10, 
+                                      border: 'none', color: 'white', cursor: 'pointer'}}>Бүртгүүлэх
                         </button> <p></p>
                     </Link>
                     
-                    <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', alignItems: 'center', borderStyle: 'solid',borderColor:'#F9D9BD', borderRadius: 10}}> 
+                    <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', alignItems: 'center', 
+                                  borderStyle: 'solid',borderColor:'#F9D9BD', borderRadius: 10, cursor: 'pointer'}}> 
                          <img src={gmail} alt="" />
                          <span style={{margin: 5}}>Gmail-ээр бүртгүүлэх</span>
                         </button> <p></p>
-                    <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', alignItems: 'center',borderStyle: 'solid',borderColor:'#F9D9BD', borderRadius: 10}}> 
+                    <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', alignItems: 'center',
+                                  borderStyle: 'solid',borderColor:'#F9D9BD', borderRadius: 10, cursor: 'pointer'}}> 
                         <img src={facebook} alt="" />
                         <span style={{margin: 5}}>Facebook-ээр бүртгүүлэх</span>
                     </button> <p></p>
@@ -62,11 +69,11 @@ export function CreatePassword(){
     return (
         <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
             <div style={{width: 478}}>
-                    <b style={{fontSize: 20, color: '#E86B02'}}>Бүртгүүлэх</b> <p></p>
+                    <b style={{fontSize: 20, color: '#E86B02', fontFamily: 'sans-serif'}}>Бүртгүүлэх</b> <p></p>
                     <input type="text" value={'Example@gmail.com'} placeholder="И-мэйл эсвэл утасны дугаар" style={{width: 470, height: 50, borderRadius: 10, border: 'none', backgroundColor: '#F5F7F9'}}/> <p></p>
                     <input type="password" placeholder='Нууц үг зохиох' style={{width: 470, height: 50, borderRadius: 10, border: 'none', backgroundColor: '#F5F7F9'}}/> <p></p>
                     <input type="password" placeholder='Нууц үг давтах' style={{width: 470, height: 50, borderRadius: 10, border: 'none', backgroundColor: '#F5F7F9'}}/> <p></p>
-                    <Link to={'/login'}>
+                    <Link to={'/login'} style={{textDecoration: 'none'}}>
                     <button style={{width: 478, height: 54, display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: '#E86B02', borderRadius: 10, border: 'none', color: 'white'}}>Бүртгүүлэх</button>
                     </Link>
                     

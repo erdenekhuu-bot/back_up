@@ -22,7 +22,8 @@ export default function Header(){
     }
 
     return (
-        <div style={{backgroundColor: (!popUp ? 'white' : 'gray'),display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderWidth: 1, borderStyle: 'solid', borderColor: '#E2E8EE'}}>
+        <div style={{backgroundColor: (!popUp ? 'white' : 'gray'),display: 'flex', justifyContent: 'space-between', 
+                    alignItems: 'center', borderWidth: 1, borderStyle: 'solid', borderColor: '#E2E8EE'}}>
                 <Link to='/' style={{textDecoration: 'none'}}>
                 <span style={{margin: 5, cursor: 'pointer', fontFamily: 'sans-serif'}}><img src={group} alt="" />
                     <span style={{color: '#F77268', fontSize: 30}}>i</span>
@@ -42,10 +43,10 @@ export default function Header(){
                     <Link to='/profile' style={{textDecoration: 'none'}}>
                         <button className='openPopup' style={{width: 111, height: 41, borderRadius: 10, borderTop: 'none', borderRight:'none',borderLeft:'none', borderWidth: 1, borderStyle: 'solid', borderColor: '#E86B02', margin: 5, backgroundColor: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center',color: '#E86B02'}}><img src={w_user} alt=''/><span style={{margin: 3}}> Профайл</span>
                     
-                        <div className='Popup' style={{position: 'absolute',top: '8.5%'}}>
-                            <div className='pop' style={{width: 270, height: 42, display: 'flex', alignItems: 'center', margin: 5, padding: 3, color: 'black', cursor: 'pointer'}}><img src={u_user} alt="" /><b>Миний мэдээлэл</b></div>
-                            <div className='pop' style={{width: 270, height: 42, display: 'flex', alignItems: 'center', margin: 5, padding: 3, cursor: 'pointer'}}><Link to='/home/loved-post' style={{textDecoration: 'none',color: 'black',}}><img src={u_heart} alt="" />Таалагдсан</Link></div>
-                            <div className='pop' style={{width: 270, height: 42, display: 'flex', alignItems: 'center', margin: 5, padding: 3, color: 'black', cursor: 'pointer'}} onClick={pop}><img src={log_out} alt="" />Гарах</div>
+                        <div className='Popup' style={{position: 'absolute',top: '7%'}}>
+                            <div className='pop' style={{width: 200, height: 40, display: 'flex', alignItems: 'center', margin: 5, padding: 3, color: 'black', cursor: 'pointer'}}><img src={u_user} alt="" /><b>Миний мэдээлэл</b></div>
+                            <div className='pop' style={{width: 200, height: 40, display: 'flex', alignItems: 'center', margin: 5, padding: 3, cursor: 'pointer'}}><Link to='/home/loved-post' style={{textDecoration: 'none',color: 'black',}}><img src={u_heart} alt="" />Таалагдсан</Link></div>
+                            <div className='pop' style={{width: 200, height: 40, display: 'flex', alignItems: 'center', margin: 5, padding: 3, color: 'black', cursor: 'pointer'}} onClick={pop}><img src={log_out} alt="" />Гарах</div>
                         </div>
                         {!popUp ? null : (<div style={{width: 482, height: 210, backgroundColor: 'white', position: 'relative', right: '650%', top: '550%', color: 'black'}}>
                                     <img src={text} alt="" style={{marginTop: '5%'}}/> <p></p>

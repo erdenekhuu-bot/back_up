@@ -30,10 +30,7 @@ const firebaseConfig: Config = {
 };
 
 const app=initializeApp(firebaseConfig)
-console.log('Success')
-
 const auth = getAuth(app)
-// connectAuthEmulator(auth, 'http://localhost:9899')
 console.log('Success')
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

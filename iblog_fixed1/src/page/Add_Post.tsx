@@ -56,7 +56,6 @@ export default function Add_Post(){
                 <b style={{fontSize: 18, fontFamily: 'sans-serif'}}>Cover зураг</b> <p></p>
                 <div id='upload'style={{width: 600, height: 154, backgroundColor: 'gray', display: 'flex', justifyContent:'center',alignItems:'center'}}>
                     <input type='file' style={{width: 500, padding: 50, backgroundImage: (file ? `url(${URL.createObjectURL(file)})`: 'none'), backgroundSize: 'cover', backgroundPosition: 'center'}} onChange={upload} placeholder='Зураг оруулах' accept='image/jpeg, image/png, image/jpg' required>
-                        {/* <span><img src={u_image} alt="" /> <br /> <span style={{textDecoration: 'underline'}}>Зураг оруулах</span></span> */}
                     </input>     
                 </div>
                
