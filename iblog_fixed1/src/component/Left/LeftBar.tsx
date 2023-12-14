@@ -33,8 +33,8 @@ export default function LeftBar(){
                
                 <div style={{height: 45}}></div>
                 <nav onClick={trigger1} style={{height: (menu1 ? 160 : 37), width: 250, padding: 5, overflow: 'hidden'}}>
-                    <b>Lifestyle</b> <br/>
-                    <div style={{width: 250, overflow: 'hidden', position: 'relative', marginTop: 15}}>
+                    <b style={{cursor: 'progress'}}>Lifestyle</b> <br/>
+                    <div style={{width: 250, overflow: 'hidden', position: 'relative', marginTop: 15,cursor: 'progress'}}>
                         <Link to='/menu' style={{textDecoration: 'none', color: 'black'}}>
                             <div className='menu' style={{padding: 10,margin: 5}}>Hobby</div>
                             <div className='menu' style={{padding: 10,margin: 5}}>Travel</div>
@@ -46,8 +46,8 @@ export default function LeftBar(){
                 </nav>
                 
                 <nav onClick={trigger2} style={{height: (menu2 ? 160 : 37), marginTop: 10,width: 250, padding: 5, overflow: 'hidden'}}>
-                    <b>Sport</b> <br/>
-                    <div style={{width: 250, overflow: 'hidden', position: 'relative', marginTop: 15}}>
+                    <b style={{cursor: 'progress'}}>Sport</b> <br/>
+                    <div style={{width: 250, overflow: 'hidden', position: 'relative', marginTop: 15,cursor: 'progress'}}>
                         <Link to='/menu' style={{textDecoration: 'none', color: 'black'}}>
                             <div className='menu' style={{padding: 10,margin: 5}}>Soccer</div>
                             <div className='menu' style={{padding: 10,margin: 5}}>Volleyball</div>
@@ -58,8 +58,8 @@ export default function LeftBar(){
                     </div>
                 </nav>
                 <nav onClick={trigger3} style={{height: (menu3 ? 160 : 37),marginTop: 10,width: 250, padding: 5, overflow: 'hidden'}}>
-                    <b>Technology</b> <br />
-                    <div style={{width: 250, overflow: 'hidden', position: 'relative', marginTop: 15}}>
+                    <b style={{cursor: 'progress'}}>Technology</b> <br />
+                    <div style={{width: 250, overflow: 'hidden', position: 'relative', marginTop: 15,cursor: 'progress'}}>
                         <Link to='/menu' style={{textDecoration: 'none', color: 'black'}}>
                             <div className='menu' style={{padding: 10,margin: 5}}>Artificial Intelligence</div>
                             <div className='menu' style={{padding: 10,margin: 5}}>Quantium Computer</div>
@@ -70,7 +70,7 @@ export default function LeftBar(){
                     </div>
                 </nav>
                 <nav onClick={trigger4} style={{height: (menu4 ? 160 : 37),marginTop: 10,width: 250, padding: 5, overflow: 'hidden'}}>
-                    <b>Entertainment</b> <br />
+                    <b style={{cursor: 'progress'}}>Entertainment</b> <br />
                     <div style={{width: 250, overflow: 'hidden', position: 'relative', marginTop: 15}}>
                         <Link to='/menu' style={{textDecoration: 'none', color: 'black'}}>
                             <div className='menu' style={{padding: 10,margin: 5}}>Billboard chart</div>

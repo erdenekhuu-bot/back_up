@@ -4,6 +4,8 @@ import App from './App.tsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { initializeApp } from 'firebase/app'
+import { connectAuthEmulator, getAuth } from 'firebase/auth'
+
 
 interface Config {
   apiKey:string,
@@ -17,7 +19,7 @@ interface Config {
 
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig:Config = {
+const firebaseConfig: Config = {
   apiKey: "AIzaSyBQfa8c27R3Gxu3FJpDIwiyM-wqVMF86IM",
   authDomain: "pro1-a38cb.firebaseapp.com",
   projectId: "pro1-a38cb",
@@ -27,7 +29,11 @@ const firebaseConfig:Config = {
   measurementId: "G-XJHGQK3LY7"
 };
 
-initializeApp(firebaseConfig)
+const app=initializeApp(firebaseConfig)
+console.log('Success')
+
+const auth = getAuth(app)
+// connectAuthEmulator(auth, 'http://localhost:9899')
 console.log('Success')
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

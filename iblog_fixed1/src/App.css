@@ -36,6 +36,7 @@
 }
 .Popup {
   display: none;
+  position: relative;
 }
 .pop:hover {
   background-color: #E86B02;

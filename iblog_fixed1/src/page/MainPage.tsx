@@ -16,8 +16,12 @@ export default function MainPage(){
                             <button type='submit' style={{height: 45, width: 50, borderTopRightRadius: 30, borderBottomRightRadius: 30, border: 'none'}}>🔍</button>
                         </form>
                     <div>
-                        <button style={{width: 149, height: 41, margin: 5, backgroundColor: 'white', color: '#E86B02', border: 'none', borderRadius: 10, cursor: 'pointer'}}><Link to='/login/signUp'>Бүртгүүлэх</Link></button>
-                        <button style={{width: 122, height: 41, margin: 5, backgroundColor: '#E86B02', color: 'white', border: 'none', borderRadius: 10, cursor: 'pointer'}}><Link to='/login'>Нэвтрэх</Link></button>
+                    <Link to='/login/signUp' style={{textDecoration: 'none'}}>
+                        <button style={{width: 149, height: 41, margin: 5, backgroundColor: 'white', borderRadius: 10, cursor: 'pointer',color: '#E86B02', border: '1px solid #DCE3EA'}}><b>Бүртгүүлэх</b></button>
+                    </Link>
+                    <Link to='/login'>
+                        <button style={{width: 122, height: 41, margin: 5, backgroundColor: '#E86B02', color: 'white', border: 'none', borderRadius: 10, cursor: 'pointer'}}><b>Нэвтрэх</b></button>
+                    </Link>
                     </div>
                 </div>
                 <div style={{padding: 40}}>

@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "firebase": "^10.7.1",
+    "firebaseui": "^6.1.0",
     "mysql": "^2.18.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

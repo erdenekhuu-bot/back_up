@@ -17,18 +17,18 @@ export default function Home(){
                             <b style={{fontSize: 24, fontFamily: 'sans-serif',margin: 5}}>Tracey Willson</b>
                         </span>
                     </div>
-                    <div style={{width: 294, display: 'flex', justifyContent: 'space-around'}}>
-                        <span style={{textAlign: 'center', margin: 5}}>
+                    <div style={{width: 294, display: 'flex', justifyContent: 'space-around', fontFamily: 'sans-serif'}}>
+                        <span style={{textAlign: 'center', margin: 5, fontSize: 15}}>
                             <b>1</b> <br /> <b>Follows</b>
                         </span>
-                        <span style={{textAlign: 'center', margin: 5}}>
+                        <span style={{textAlign: 'center', margin: 5, fontSize: 15}}>
                             <b>0</b> <br /> <b>Followers</b>
                         </span>
-                        <span style={{textAlign: 'center', margin: 5}}>
+                        <span style={{textAlign: 'center', margin: 5, fontSize: 15}}>
                             <b>0</b> <br /> <b>Posts</b>
                         </span>
                     </div>
-                    <button style={{ width: 294, padding: 5, borderRadius: 10, display: 'flex', alignItems:'center', justifyContent:'center'}}><img src={w_pen} alt="" />Профайл засах</button>
+                    <button style={{ width: 294, height: 41, color: '#546371',padding: 5, borderRadius: 10, display: 'flex', alignItems:'center', justifyContent:'center', border: '1px solid #546371', cursor: 'pointer'}}><img src={w_pen} alt="" style={{margin: 2}}/>Профайл засах</button>
                 </div>
                     <Outlet/>   
             </div>
